@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/imgLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/plate" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item name "
+        android:textSize="18dp"
+
+        android:layout_alignTop="@+id/imgLayout"
+        android:layout_toRightOf="@+id/imgLayout"
+        android:layout_toLeftOf="@+id/BtnAdd"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/descText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Dh"
+        android:layout_below="@+id/nameTxt"
+        android:layout_toRightOf="@+id/imgLayout"
+        android:layout_toLeftOf="@+id/BtnAdd"
+        android:layout_marginTop="2dp"/>
+
+    <TextView
+        android:id="@+id/priceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/nameTxt"
+        android:gravity="right"
+        android:text="15.0Dh"
+        android:layout_marginRight="5dp"
+        />
+
+
+
+
+    <ImageView
+        android:background="?android:selectableItemBackground"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/add"
+        android:id="@+id/BtnAdd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/priceTxt"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>

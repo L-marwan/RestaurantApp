@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/oimgLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp">
+
+        <ImageView
+            android:id="@+id/orderImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/plate" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/onameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item name "
+        android:textSize="18dp"
+
+        android:layout_alignTop="@+id/oimgLayout"
+        android:layout_toRightOf="@+id/oimgLayout"
+        android:layout_toLeftOf="@+id/oBtnAdd"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/opriceTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/onameTxt"
+        android:gravity="right"
+        android:text="15.0Dh"
+        android:layout_marginRight="5dp"
+        />
+
+
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/del"
+        android:id="@+id/oBtnAdd"
+        android:layout_alignBottom="@+id/priceTxt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/opriceTxt"
+        android:layout_centerVertical="true" />
+
+
+</RelativeLayout>
